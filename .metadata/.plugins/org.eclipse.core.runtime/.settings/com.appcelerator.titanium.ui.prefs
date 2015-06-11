@@ -1,6 +1,6 @@
 =run
 AboutMe\:launchMode=run
-AboutMe\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.F14E6894-10A7-44AF-88CA-E29E0C0F43E9
+AboutMe\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.5BC1582F-905F-4976-A555-7B16C93C4E8C
 LAST_LAUNCH_TIMESTAMP=1433985369248
 eclipse.preferences.version=1
 preference.show.console.onError=true
