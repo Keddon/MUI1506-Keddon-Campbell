@@ -1,0 +1,32 @@
+Titanium.UI.setBackgroundColor('#000');
+
+var petsImg = Titanium.Filesystem.getFile(Titanium.Filesystem.resourcesDirectory, "images");
+var imgFile = petsImg.getDirectoryListing();
+
+var win1 = Titanium.UI.createWindow({  
+    title:'Rescue Pets',
+    backgroundColor:'#c6e1e2'
+});
+
+var win0 = Titanium.UI.iOS.createNavigationWindow({
+   window: win1
+});
+
+var Petslist = Titanium.UI.createTableView({
+	style: Titanium.UI.iPhone.TableViewStyle.GROUPED
+});
+
+var petview = Titanium.UI.createView({
+	backgroundColor: "#bdd1d2",
+	hasChild: true,
+	borderRadius: 10,
+	top: 5,
+	width: "80%",
+	height: 80,
+});
+
+console.log(imgFile.length);
+
+Petslist.add(petview);
+win1.add(Petslist);
+win0.open();

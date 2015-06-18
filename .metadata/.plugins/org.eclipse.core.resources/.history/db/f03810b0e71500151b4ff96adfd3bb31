@@ -1,0 +1,33 @@
+Titanium.UI.setBackgroundColor('#000');
+
+var win1 = Titanium.UI.createWindow({  
+    title:'Tab 1',
+    backgroundColor:'#fff'
+});
+
+var viewr = Titanium.UI.createView({
+	top: 20,
+	height: 40,
+	backgroundColor: "#54dcdc",
+	width: "100%",
+});
+
+var label0 = Titanium.UI.createLabel({
+	color: '#999',
+	text: 'Rescue Pets',
+	font:{fontSize:20,fontFamily:'Helvetica Neue'},
+	textAlign:'center',
+	width:'auto'
+});
+
+var label1 = Titanium.UI.createLabel({
+	color:'#999',
+	text:'I am Window 1',
+	font:{fontSize:20,fontFamily:'Helvetica Neue'},
+	textAlign:'center',
+	width:'auto'
+});
+
+viewr.add(label0);
+win1.add(label1,viewr);
+win1.open();

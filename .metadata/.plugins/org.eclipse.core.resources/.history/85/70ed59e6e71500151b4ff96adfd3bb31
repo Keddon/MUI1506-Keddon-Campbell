@@ -1,0 +1,30 @@
+Titanium.UI.setBackgroundColor('#000');
+
+var win0 = Titanium.UI.createWindow({  
+    title:'Tab 1',
+    backgroundColor:'#fff'
+});
+
+var win1 = Titanium.UI.iOS.createNavigationWindow({
+   window: win0
+});
+
+var viewer0 = Titanium.UI.createView({
+	top: 20,
+	height: 40,
+	backgroundColor: "#54dcdc",
+	width: "100%",
+});
+
+var label0 = Titanium.UI.createLabel({
+	color: '#999',
+	text: 'Rescue Pets',
+	font:{fontSize:20,fontFamily:'Helvetica Neue'},
+	textAlign:'center',
+	width:'auto'
+});
+
+
+viewer0.add(label0);
+win0.add(viewer0);
+win1.open();

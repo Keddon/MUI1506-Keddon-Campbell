@@ -1,0 +1,18 @@
+var theRescue = 0;
+
+function Petdatail(){
+	var detailWindow = Titanium.UI.createWindow({
+		title: "About " + event.source.name
+		
+	});
+	console.log(this.source.name);
+	win0.openWindow(detailWindow);
+	
+	
+};
+
+
+PetSection.addEventListener("click", Petdatail);
+// {
+	// console.log(event.source.name);
+// });

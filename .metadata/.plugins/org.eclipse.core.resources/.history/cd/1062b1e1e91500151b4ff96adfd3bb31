@@ -1,0 +1,18 @@
+Titanium.UI.setBackgroundColor('#000');
+
+var win0 = Titanium.UI.iOS.createNavigationWindow({
+   window: win0
+});
+
+var win1 = Titanium.UI.createWindow({  
+    title:'Rescue Pets',
+    backgroundColor:'#c6e1e2'
+});
+
+var Petslist = Titanium.UI.createTableView({
+//	style: Titanium.UI.iPhone.TableViewStyle.GROUPED
+});
+
+
+
+win0.open();

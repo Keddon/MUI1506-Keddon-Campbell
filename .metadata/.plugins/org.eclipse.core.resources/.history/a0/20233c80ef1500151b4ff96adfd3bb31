@@ -1,0 +1,66 @@
+Titanium.UI.setBackgroundColor('#000');
+
+var petsImg = Titanium.Filesystem.getFile(Titanium.Filesystem.resourcesDirectory, "images");
+var imgFile = petsImg.getDirectoryListing();
+
+var win1 = Titanium.UI.createWindow({  
+    title:'Rescue Pets',
+    backgroundColor:'#c6e1e2'
+});
+
+var win0 = Titanium.UI.iOS.createNavigationWindow({
+   window: win1
+});
+
+var Petslist = Titanium.UI.createTableView({
+	style: Titanium.UI.iPhone.TableViewStyle.GROUPED
+});
+
+var petview = Titanium.UI.createView({
+	backgroundColor: "#bdd1d2",
+	hasChild: true,
+	borderRadius: 10,
+	top: 5,
+	width: "80%",
+	height: 80,
+});
+
+var infoImage = Titanium.UI.createImageView({
+	image:"images/" + imgFile[0],
+	width: "30%",
+	left: 5,
+	top: 0,
+	});
+
+var petLabel = Titanium.UI.createLabel({
+	text: imgFile[0],
+	right: 10,
+});
+
+var petview2 = Titanium.UI.createView({
+	backgroundColor: "#bdd1d2",
+	hasChild: true,
+	borderRadius: 10,
+	top: 5,
+	width: "80%",
+	height: 80,
+});
+
+var infoImage2 = Titanium.UI.createImageView({
+	image:"images/" + imgFile[1],
+	width: "30%",
+	left: 5,
+	top: 0,
+	});
+
+var petLabel2 = Titanium.UI.createLabel({
+	text: imgFile[1],
+	right: 10,
+});
+
+
+petview2.add(infoImage2, petLabel2);
+petview.add(infoImage, petLabel);
+Petslist.add(petview,petview2);
+win1.add(Petslist);
+win0.open();
