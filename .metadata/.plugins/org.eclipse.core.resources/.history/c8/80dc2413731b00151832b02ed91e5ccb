@@ -1,0 +1,13 @@
+
+var textField1 = Titanium.UI.createTextField({
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	color: '#336699',
+	top: 10,
+	left: 10,
+	width: 250,
+	height: 60
+});
+
+
+
+FormView.add(textField1);

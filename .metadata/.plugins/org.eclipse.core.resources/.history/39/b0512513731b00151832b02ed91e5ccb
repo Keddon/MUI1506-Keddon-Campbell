@@ -22,7 +22,6 @@ var IntroLabel = Titanium.UI.createLabel({
 	text: "This app will be able to caculate your conversion inqueries. Fill in the fields below and click 'Convert' when ready!!",
 	color: "#000",
 	font: fontSize = 8,
-	left: 10,
 });
 
 var FormView = Titanium.UI.createView({

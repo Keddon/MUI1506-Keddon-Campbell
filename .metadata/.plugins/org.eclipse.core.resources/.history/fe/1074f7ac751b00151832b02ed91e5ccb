@@ -1,0 +1,35 @@
+
+var textField1 = Titanium.UI.createTextField({
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	color: '#336699',
+	top: 10,
+	left: 10,
+	width: 250,
+	height: 60
+});
+
+
+
+var covertPicker = Titanium.UI.createPicker({
+	//borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	color: '#336699',
+	top: 90,
+	left: 10,
+	width: 250,
+	height: 5,
+	useSpinner: true,
+	type: 1,
+	
+});
+
+var data = [];
+data[0]=Ti.UI.createPickerRow({title:'ZBananas'});
+data[1]=Ti.UI.createPickerRow({title:'Strawberries'});
+data[2]=Ti.UI.createPickerRow({title:'Mangos'});
+data[3]=Ti.UI.createPickerRow({title:'Grapes'});
+
+covertPicker.add(data);
+covertPicker.selectionIndicator = true;
+
+FormView.add(covertPicker);
+FormView.add(textField1);

@@ -1,0 +1,50 @@
+
+// var textField1 = Titanium.UI.createTextField({
+	// borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	// color: '#336699',
+	// top: 10,
+	// left: 10,
+	// width: 250,
+	// height: 60
+// });
+// 
+// 
+
+var PrView = Titanium.UI.createView({
+	borderRadius: 15,
+	width: "85%",
+	left: 10,
+	top: 30,
+	height: 90,
+	backgroundColor: "#96efa5",
+});
+
+var TeView = Titanium.UI.createView({
+	borderRadius: 15,
+	width: "85%",
+	left: 10,
+	top: 150,
+	height: 90,
+	backgroundColor: "#ef9c96",
+});
+
+var LeView = Titanium.UI.createView({
+	borderRadius: 15,
+	width: "85%",
+	left: 10,
+	top: 270,
+	height: 90,
+	backgroundColor: "#e8ef96",
+});
+
+var WeView = Titanium.UI.createView({
+	borderRadius: 15,
+	width: "85%",
+	left: 10,
+	top: 390,
+	height: 90,
+	backgroundColor: "#96eeef",
+});
+
+FormView.add(PrView,TeView,LeView,WeView);
+//FormView.add(textField1);
