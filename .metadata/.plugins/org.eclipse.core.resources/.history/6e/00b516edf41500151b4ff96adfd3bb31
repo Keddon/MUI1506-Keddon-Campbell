@@ -1,8 +1,0 @@
-
-
-
-
-
-Petslist.addEventListener("click", function(event){
-	console.log(event.source);
-});
