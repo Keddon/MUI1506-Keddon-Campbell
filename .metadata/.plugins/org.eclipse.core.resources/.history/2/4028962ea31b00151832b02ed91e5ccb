@@ -560,9 +560,10 @@ function WeightListener () {
 };
 
 function WeightCalc(){
-	if(WconvetingValue.value != Number()){
-		alert("Try Real numbers");
-	}else if(WCFlabel.text == WCTlabel.text){
+	// if(WconvetingValue.value != Number()){
+		// alert("Try Real numbers");
+	// }else 
+	if(WCFlabel.text == WCTlabel.text){
 		alert("Try two different units");
 	}else if (WCFlabel.text == "mg" && WCTlabel.text == "Gr"){
 		alert(WconvetingValue.value + " from " + WCFlabel.text + " to " + WCTlabel.text + " is " + (WconvetingValue.value*0.001));
