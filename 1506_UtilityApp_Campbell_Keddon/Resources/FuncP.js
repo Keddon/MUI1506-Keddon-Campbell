@@ -1,0 +1,64 @@
+// var pressureWindow = Titanium.UI.createWindow({
+	// backgroundColor: "#fff"
+// });
+// 
+// var pressureIntro = Titanium.UI.createView({
+	// top: 30,
+	// width: "85%",
+	// height: "80%",
+// });
+// 
+// 
+// var convertFrom = Titanium.UI.createView({
+	// top: 100,
+	// left: 20,
+	// borderReadius: 15,
+	// backgroundColor: "#fff",
+// });
+// 
+// var CFlabel = Titanium.UI.createLabel({
+	// text: "PSI",
+// });
+// 
+// convertFrom.add(CFlabel);
+// 
+// var convertTo = Titanium.UI.createView({
+	// top: 100,
+	// left: 20,
+	// borderReadius: 15,
+	// backgroundColor: "#fff",
+// });
+// 
+// var CTlabel = Titanium.UI.createLabel({
+	// text: "PSI",
+// });
+// 
+// convertTo.add(CTlabel);
+// 
+// var convetingValue = Titanium.UI.createTextField({
+	// borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	// hintText: "Enter value here",
+	// top: 300,
+// });
+// 
+// var ConfirmPrCalc = Titanium.UI.createView({
+	// backgroundColor: "fff",
+	// top: 400,
+// });
+// 
+// var confLabel = Titanium.UI.createLabel({
+	// text: "Calculate!",
+// });
+// 
+// ConfirmPrCalc.add(confLabel);
+// 
+// 
+// 
+// 
+// 
+// function PressureListener () {
+	// win1.openWindow(pressureWindow);
+// };
+// 
+// 
+// PrView.addEventListener("click", PressureListener);

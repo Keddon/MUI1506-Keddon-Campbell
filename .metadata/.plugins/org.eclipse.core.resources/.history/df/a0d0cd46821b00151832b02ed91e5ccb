@@ -1,0 +1,14 @@
+var PressLabel = Titanium.UI.createLabel({
+	top: 5,
+	textAlign: center,
+	text: "Pressure?",
+	fontSize : 18,
+	fontWeight: "bold",
+});
+
+var PressHint = Titanium.UI.createLabel({
+	text: "Used to calculate pressure conversions..",
+	fontSize: 8,
+});
+
+PrView.add(PressLabel);

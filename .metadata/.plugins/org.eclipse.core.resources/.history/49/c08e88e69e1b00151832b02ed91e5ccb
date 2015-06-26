@@ -1,0 +1,13 @@
+var PressWindow = Titanium.UI.createWindow({
+	backgroundColor: "#fff",
+});
+
+function PressWind() {
+
+PressWindow.open();
+
+ 
+};
+
+
+PrView.addEventListener("clcik", PressWind);

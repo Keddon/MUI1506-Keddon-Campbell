@@ -16,12 +16,14 @@ var IntroView = Titanium.UI.createView({
 	height: 70,
 	backgroundColor: "#c9ab7b",
 	borderRadius: 15,
+	viewShadowColor: "#9a9a9a",
+	viewShadowOffset: (1,-3),
 });
 
 var IntroLabel = Titanium.UI.createLabel({
-	text: "This app will be able to caculate your conversion inqueries. Fill in the fields below and click 'Convert' when ready!!",
+	text: "This app will be able to caculate your conversion inqueries. Select your conversion choice to start",
 	color: "#000",
-	font: fontSize = 8,
+	font: fontSize = 8, 
 	left: 10,
 });
 

@@ -1,0 +1,76 @@
+
+// var textField1 = Titanium.UI.createTextField({
+	// borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	// color: '#336699',
+	// top: 10,
+	// left: 10,
+	// width: 250,
+	// height: 60
+// });
+// 
+// 
+
+var PrView = Titanium.UI.createView({
+	borderRadius: 15,
+	width: "85%",
+	left: 10,
+	top: 30,
+	height: 70,
+	backgroundColor: "#96efa5",
+	viewShadowColor: "#9a9a9a",
+	viewShadowOffset: (1,-3),
+});
+
+var TeView = Titanium.UI.createView({
+	borderRadius: 15,
+	width: "85%",
+	left: 10,
+	top: 130,
+	height: 70,
+	backgroundColor: "#ef9c96",
+	viewShadowColor: "#9a9a9a",
+	viewShadowOffset: (1,-3),
+});
+
+var LeView = Titanium.UI.createView({
+	borderRadius: 15,
+	width: "85%",
+	left: 10,
+	top: 250,
+	height: 70,
+	backgroundColor: "#e8ef96",	
+	viewShadowColor: "#9a9a9a",
+	viewShadowOffset: (1,-3),
+});
+
+var WeView = Titanium.UI.createView({
+	borderRadius: 15,
+	width: "85%",
+	left: 10,
+	top: 370,
+	height: 70,
+	backgroundColor: "#96eeef",
+	viewShadowColor: "#9a9a9a",
+	viewShadowOffset: (1,-3),	
+});
+
+var PressLabel = Titanium.UI.createLabel({
+	//top: 5,
+	text: "Pressure?",
+	fontSize : 1508,
+	font:fontWeight = "bold",
+	color: "#606060",
+});
+
+var PressHint = Titanium.UI.createLabel({
+	top: 50,
+	text: "Used to calculate pressure conversions..",
+	font: fontSize = 8,
+});
+
+
+
+// var Pload = require("pressure");
+PrView.add(PressLabel);
+
+FormView.add(PrView,TeView,LeView,WeView);
